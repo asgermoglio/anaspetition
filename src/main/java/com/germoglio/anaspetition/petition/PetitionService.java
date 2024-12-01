@@ -17,9 +17,9 @@ public class PetitionService {
     private static int petitionCount = 0;
     private static List<Petition> petitions = new ArrayList<>();
     static {
-        petitions.add(new Petition(++petitionCount, "ana", "Random name for petition", LocalDate.now().plusYears(1), false, ""));
-        petitions.add(new Petition(++petitionCount, "ana", "CT5171 Petition", LocalDate.now().plusYears(2), false, ""));
-        petitions.add(new Petition(++petitionCount, "ana", "University of Galway Petition", LocalDate.now().plusYears(3), false, ""));
+        petitions.add(new Petition(++petitionCount, "user", "Random name for petition", LocalDate.now().plusYears(1), false, ""));
+        petitions.add(new Petition(++petitionCount, "user", "CT5171 Petition", LocalDate.now().plusYears(2), false, ""));
+        petitions.add(new Petition(++petitionCount, "user", "University of Galway Petition", LocalDate.now().plusYears(3), false, ""));
     }
 
     public void addPetition(String username, String description, LocalDate targetDate, boolean done, String email){

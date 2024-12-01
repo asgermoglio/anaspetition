@@ -28,7 +28,7 @@ public class PetitionController {
     @RequestMapping("list-petitions")
     public String listAllTodos(ModelMap model){
 
-        List<Petition> petitions = petitionService.findByUsername("ana");
+        List<Petition> petitions = petitionService.findByUsername("user");
         model.addAttribute("petitions", petitions);
 
         return "listPetitions";
