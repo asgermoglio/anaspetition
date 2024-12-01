@@ -74,7 +74,7 @@ pipeline {
 
         stage('GetProject') {
             steps {
-                git 'https://github.com/asgermoglio/ana_project_v3.git'
+                git 'https://github.com/asgermoglio/anaspetition.git'
             }
         }
 
